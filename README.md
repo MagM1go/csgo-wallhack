@@ -9,3 +9,5 @@ A console CS:GO WH.
 # Before just write python starter.py in console
 
 ```
+
+It's just [re-write](https://github.com/danielkrupinski/OneByteWallhack) onebytewallhack 
