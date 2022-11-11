@@ -9,7 +9,7 @@ class WallHack:
         self.process = pymem.Pymem('csgo.exe')
 
     def get_addr(self):
-        byte = rb'\x83\xF8.\x8B\x45\x08\x0F'
+        byte = rb'\x33\xC0\x83\xFA.\xB9\x20'
 
         client = pymem.process.module_from_name(
             self.process.process_handle,
@@ -19,7 +19,7 @@ class WallHack:
         lp_base_dll = client.lpBaseOfDll
         module = self.process.read_bytes(lp_base_dll, client.SizeOfImage)
 
-        addr_info = lp_base_dll + re.search(byte, module).start() + 2 # type: ignore
+        addr_info = lp_base_dll + re.search(byte, module).start() + 4
 
         return addr_info
 
