@@ -5,7 +5,7 @@ A console CS:GO WH.
 
 ```Python
 
-# Load this project in ZIP format and unarchive.
+# Load this project as ZIP format and unarchive.
 # Before just write python starter.py in console
 
 ```
