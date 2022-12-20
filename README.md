@@ -11,5 +11,4 @@ A console CS:GO WH.
 ```
 
 It's just [re-write](https://github.com/danielkrupinski/OneByteWallhack) onebytewallhack 
-
 ```
